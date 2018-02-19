@@ -1,0 +1,17 @@
+body{
+  width: 90%
+  margin: 0 auto;
+  background-color: aqua;
+}
+h1{
+color: black;
+}
+h2{
+color: red;
+}
+p{
+color: green;
+}
+footer{
+  background-color: black;
+}
