@@ -1,5 +1,4 @@
 //greeting changes baised on time of day
-
 var today = new Date();
 var hourNow = today.getHours();
 var greeting;
