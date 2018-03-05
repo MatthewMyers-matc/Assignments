@@ -1,17 +1,17 @@
-(function(){
+//(function(){
 
 
 
-var data =[     {name: "Emmet", description: "test", author: "name", url='https://atom.io/packages/emmet', downloads: 1665835, stars: 2536},
-                {name: "atom-beautify", description: "test", author: "name", url='https://atom.io/packages/atom-beautify', downloads: 4233408, stars: 4546},
-                {name: "Linter", description: "test", author: "name", url='https://atom.io/packages/linter', downloads: 4413173, stars: 4128},
-                {name: "language-liquid", description: "test", author: "name", url='https://atom.io/packages/language-liquid', downloads: 32365, stars: 76},
-                {name: "Highlight Selected", description: "test", author: "name", url='https://atom.io/packages/highlight-selected', downloads: 1043782, stars: 2741,
-                {name: "File Icons", description: "test", author: "name", url='https://atom.io/packages/file-icons', downloads: 4284581, stars: 4949},
-                {name: "Pigments", description: "test", author: "name", url='https://atom.io/packages/pigments', downloads: 2130545, stars: 3332},
-                {name: "Minimap", description: "test", author: "name", url='https://atom.io/packages/minimap', downloads: 4501700, stars: 5173},
-                {name: "Atom Material UI", description: "test", author: "name", url='https://atom.io/themes/atom-material-ui', downloads: 1301210, stars: 1415},
-                {name: "Atom Material Syntax", description: "test", author: "name", url='https://atom.io/themes/atom-material-syntax', downloads: 782926, stars: 1007} ];
+var data =[     {name: 'Emmet', description: 'test', author: 'emmetio', url: 'https://atom.io/packages/emmet', downloads: 1665835, stars: 2536},
+                {name: "atom-beautify", description: "test", author: "name", url: 'https://atom.io/packages/atom-beautify', downloads: 4233408, stars: 4546},
+                {name: "Linter", description: "test", author: "name", url: 'https://atom.io/packages/linter', downloads: 4413173, stars: 4128},
+                {name: "language-liquid", description: "test", author: "name", url: 'https://atom.io/packages/language-liquid', downloads: 32365, stars: 76},
+                {name: "Highlight Selected", description: "test", author: "name", url: 'https://atom.io/packages/highlight-selected', downloads: 1043782, stars: 2741},
+                {name: "File Icons", description: "test", author: "name", url: 'https://atom.io/packages/file-icons', downloads: 4284581, stars: 4949},
+                {name: "Pigments", description: "test", author: "name", url: 'https://atom.io/packages/pigments', downloads: 2130545, stars: 3332},
+                {name: "Minimap", description: "test", author: "name", url: 'https://atom.io/packages/minimap', downloads: 4501700, stars: 5173},
+                {name: "Atom Material UI", description: "test", author: "name", url: 'https://atom.io/themes/atom-material-ui', downloads: 1301210, stars: 1415},
+                {name: "Atom Material Syntax", description: "test", author: "name", url: 'https://atom.io/themes/atom-material-syntax', downloads: 782926, stars: 1007} ];
 
 function Package(data){
   this.name = data.name;
@@ -35,16 +35,16 @@ var dateEL = document.getElementById('date');
 dateEL.textContent = today.toDateString();
 
 //load package and write infor to page
-var emmet = new Package{data[0]};
-var beautify = new Package{data[1]};
-var linter = new Package{data[2]};
-var liquid = new Package{data[3]};
-var highlight = new Package{data[4]};
-var icons = new Package{data[5]};
-var pigment = new Package{data[6]};
-var minimap = new Package{data[7]};
-var ui = new Package{data[8]};
-var syntax = new Package{data[9]};
+var emmet = new Package (data[0]);
+var beautify = new Package (data[1]);
+var linter = new Package (data[2]);
+var liquid = new Package (data[3]);
+var highlight = new Package (data[4]);
+var icons = new Package (data[5]);
+var pigment = new Package (data[6]);
+var minimap = new Package (data[7]);
+var ui = new Package (data[8]);
+var syntax = new Package (data[9]);
 
 
 //for all of p1
@@ -178,4 +178,4 @@ p10Downloads.textContent = syntax.downloads;
 p10Stars.textContent = syntax.stars;
 
 
-}());
+//}());
