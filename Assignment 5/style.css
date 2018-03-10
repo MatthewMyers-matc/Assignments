@@ -1,3 +1,9 @@
+*{
+  font-family: fantasy;
+  background-color: #994993;
+  color: #000000;
+}
+
 body {
   font-family: sans-serif;
   margin: auto 30px;
