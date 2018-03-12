@@ -1,0 +1,22 @@
+*{
+  font-family: fantasy;
+}
+
+.out-message{
+  color: #ffffff;
+  background-color: #ff0000;
+}
+
+.in-message{
+  color: #ffffff;
+  background-color: #0000ff;
+}
+
+body {
+  font-family: sans-serif;
+  margin: auto 30px;
+}
+
+#image-header {
+  width: 100%;
+}
