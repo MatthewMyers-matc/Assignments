@@ -2,32 +2,44 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Hotels</title>
+    <link rel="stylesheet" href="style.css" />
+    <title></title>
   </head>
   <body>
+    <header>
+      <span id="header-title">My Sweet Blog</span>
+      <span id="header-menu">
+        <input type="checkbox" id="show-tooltip" value="">
+        <span>Show Tooltip</span>
+        <button type="button" id="new-button">New</button>
+      </span>
+    </header>
     <main>
-      <h1>Hotels</h1>
-      <ul id="hotel-list">
-        <li>Hilton</li>
-        <li>Pfister</li>
-        <li>Days Inn</li>
-      </ul>
-      <div id="hotel-details">
-        <h2 id="name"></h2>
-        <div>
-          <span>Rooms: </span>
-          <span id="rooms"></span>
-        </div>
-        <div>
-          <span>Booked: </span>
-          <span id="booked"></span>
-        </div>
-        <div>
-          <span>Available: </span>
-          <span id="available"></span>
-        </div>
-      </div>
     </main>
+    <footer id="content-footer">
+      <ul class="footer">
+        <li>
+          screenX<span id="screenX"></span>
+        </li>
+        <li>
+          screenY<span id="screenY"></span>
+        </li>
+
+        <li>
+          pageX<span id="pageX"></span>
+        </li>
+        <li>
+          pageY<span id="pageY"></span>
+        </li>
+
+        <li>
+          clientX<span id="clientX"></span>
+        </li>
+        <li>
+          clientY<span id="clientY"></span>
+        </li>
+      </ul>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>

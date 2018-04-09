@@ -1,28 +1,28 @@
-function Hotel(name, rooms, booked){
-  this.name = name;
-  this.rooms = rooms;
-  this.booked = booked;
+var titleTip = 'Charcter limit: ';
+var titleMax = 'Max limit reached!';
+var showToolTip = false;
 
-  this.checkAvailability = function(){
-    return this.rooms - this.booked;
-  };
+function get(element) {
+  return document.getElementById(element)
 }
 
-var data = [{rooms: 5}];
+function showPosition (event) {
+  var screenX = get('screenX'),
+      screenY = get('screenY'),
+      pageX = get('pageX'),
+      pageY = get('pageY'),
+      clientX = get('clientX'),
+      clientY = get('clientY');
 
-var list = document.getElementById('hotel-list');
-list.click = function (event){
-  var hotelName = event.target.innerHTML;
-  var hotel new Hotel(hotelName, 20, 15);
+  screenX.textContent = event.screenX;
+  screenY.textContent = event.screenY;
 
-  var name = document.getElementById('name');
-  name.textContent = hotel.name;
+  pageX.textContent = event.pageX;
+  pageY.textContent = event.pageY;
 
-  var rooms = document.getElementById('rooms');
-  rooms.textContent = hotel.rooms;
+  clientX.textContent = event.clientX;
+  clientY.textContent = event.clientY;
 
-  var booked = document.getElementById('booked');
-  booked.textContent = hotel.booked;
+}
 
-  document.getElementById('available').textContent = hotel.checkAvailability();
-};
+window.addEventListener('mousemove', showPosition);
