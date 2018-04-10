@@ -1,3 +1,11 @@
+*{
+  font-family: fantasy;
+}
+
+.out-message{
+  color: #000000;
+}
+
 body{
   display: flex;
   min-height: 100vh;
