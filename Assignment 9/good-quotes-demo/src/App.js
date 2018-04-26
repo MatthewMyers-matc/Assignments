@@ -77,6 +77,14 @@ class App extends Component {
           <input type="text" ref={this.authorInput}></input>
           <input type="submit"></input>
         </form>
+        <main>
+          {this.state.quotes.map(quote =>
+            <section key={quote.id}>
+              <blockquote>{ quote.text }</blockquote>
+              <span className="author">{ quote.author }</span>
+            </section>
+          )}
+        </main>
       </div>
     );
   }
