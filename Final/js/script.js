@@ -1,4 +1,4 @@
-var data = [
+var data = [ //all of the information for all of the sections
     {
       id: 1,
       title: 'About me',
@@ -96,7 +96,7 @@ function initPosts(){
 
       $navItem = $('<li></li>');
 
-      //add post data
+      //add data to the webpage
       $title.text(data[i].title);
       $body.text(data[i].body);
       $body2.text(data[i].body2);
@@ -113,12 +113,22 @@ function initPosts(){
       //$item.text(list[i].item);
 
 
-      //combine post elements
+      //combine elements to the one page
       $post.attr('id', postId);
       $post.append($title);
       $post.append($body);
       $post.append($body2);
       $post.append($body3);
+
+      /*if($item.text = true)//code works for if statement, but the item is still being appended on all pages
+      {
+        $post.append($item);
+      }
+      else{
+
+      }*/
+
+
       /*$post.append($item);
       $post.append($item2);
       $post.append($item3);
